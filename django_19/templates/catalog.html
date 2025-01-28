@@ -1,0 +1,15 @@
+{% extends 'menu.html'%}
+
+{% block pagename %}
+    <h1> Каталог игр {{block.super}}</h1>
+{% endblock %}
+
+{% block menu %}
+    {{block.super}}
+{% endblock %}
+
+{% block catalog %}
+    <h2>старые добрые игры</h2>
+    {{block.super}}
+    <button><a href="/"> Вернуться на главную</a></button>
+{% endblock %}
